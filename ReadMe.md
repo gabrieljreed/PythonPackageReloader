@@ -1,6 +1,6 @@
 # Maya Python package reloader
 Taken from Aleksandar Kocić's website, which can be found [here](https://www.aleksandarkocic.com/2020/12/19/live-reload-your-python-code-in-maya/).
-Essentially, it unloads any specified python packages currently imported in Maya and allows for a clean reimport.
+It unloads any specified python packages currently imported in Maya and allows for a clean reimport.
 
 ## Installation
 Clone this repository into the Maya scripts folder (usually found in Documents/maya/2022/scripts)
