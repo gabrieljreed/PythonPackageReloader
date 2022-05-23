@@ -3,7 +3,7 @@ Taken from Aleksandar Kocić's website, which can be found [here](https://www.al
 It unloads any specified python packages currently imported in Maya and allows for a clean reimport.
 
 ## Installation
-Clone this repository into the Maya scripts folder (usually found in Documents/maya/2022/scripts)
+Clone this repository into the Maya scripts folder (usually found in Documents/maya/20XX/scripts)
 ```
 git clone git@github.com:gabrieljreed/MayaPackageReloader.git
 ```
