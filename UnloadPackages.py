@@ -1,26 +1,31 @@
 import sys
 
-# if you have some packages that you often reload, you can put them here
-# and they will get reloaded if "packages" attribute is not explicitly stated
+
 DEFAULT_RELOAD_PACKAGES = []
 
-def unload_packages(silent=True, packages=None):
+
+def unloadPackages(silent=True, packages=None):
     if packages is None:
         packages = DEFAULT_RELOAD_PACKAGES
 
-    # construct reload list
-    reloadList = []
-    for i in sys.modules.keys():
+    reload_list = []
+    for module in sys.modules.keys():
         for package in packages:
-            if i.startswith(package):
-                reloadList.append(i)
+            if module.startswith(package):
+                reload_list.append(module)
 
-    # unload everything
-    for i in reloadList:
+    for module in reload_list:
         try:
-            if sys.modules[i] is not None:
-                del(sys.modules[i])
+            if sys.modules[module] is not None:
+                del sys.modules[module]
                 if not silent:
-                    print("Unloaded: %s" % i)
-        except:
-            print("Failed to unload: %s" % i)
+                    print(f"Unloaded: {module}")
+        except Exception as e:
+            if silent:
+                pass
+            else:
+                print(f"Error unloading {module}: {e}")
+
+
+if __name__ == "__main__":
+    unloadPackages()
