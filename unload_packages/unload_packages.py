@@ -1,10 +1,10 @@
 import sys
 
 
-DEFAULT_RELOAD_PACKAGES = []
+DEFAULT_RELOAD_PACKAGES: list[str] = []
 
 
-def unloadPackages(silent=True, packages=None):
+def unload_packages(silent=True, packages=None):
     if packages is None:
         packages = DEFAULT_RELOAD_PACKAGES
 
@@ -28,4 +28,4 @@ def unloadPackages(silent=True, packages=None):
 
 
 if __name__ == "__main__":
-    unloadPackages()
+    unload_packages()
