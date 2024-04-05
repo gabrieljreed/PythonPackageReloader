@@ -11,8 +11,8 @@ git clone git@github.com:gabrieljreed/MayaPackageReloader.git
 ## Usage
 In the Maya script editor, add this code to the top of your script:
 ```
-from UnloadPackages import UnloadPackages
-UnloadPackages.unload_packages(silent=False, packages="myPackage")
+from unload_packages import unload_packages
+unload_packages(silent=False, packages="myPackage")
 
 from myPackage import myPackage
 ...
