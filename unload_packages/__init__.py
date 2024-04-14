@@ -2,7 +2,6 @@
 
 import sys
 
-
 DEFAULT_RELOAD_PACKAGES: list[str] = []
 
 

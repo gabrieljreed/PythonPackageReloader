@@ -1,0 +1,122 @@
+[flake8]
+exclude = .git,docs/conf.py,.tox,*.egg,build,data,venv,requirements
+max-line-length = 119
+select =
+# A001: Python builtin shadowed by a variable
+    A001,
+# A002: Python builtin shadowed by an argument
+    A002,
+# A003: Python builtin shadowed by a class attribute
+    A003,
+# D100: Missing docstring in public module
+    D100,
+# D101: Missing docstring in public class
+    D101,
+# D102: Missing docstring in public method
+    D102,
+# D103: Missing docstring in public function
+    D103,
+# D104: Missing docstring in public package
+    D104,
+# D106: Missing docstring in public nested class
+    D106,
+# D300: Use """triple double quotes"""
+    D300,
+# D301: Use r""" if any backslashes in a docstring
+    D301,
+# E501: Line too long
+    E501,
+# F401: "module" imported but unused
+    F401,
+# F402: import "module" from line "N" shadowed by loop variable
+    F402,
+# F403: "from module import *" used; unable to detect undefined names
+    F403,
+# F404: future import(s) "name" after other statements
+    F404,
+# F405: "name" may be undefined, or defined from star imports: "module"
+    F405,
+# F406: "from module import *" only allowed at module level
+    F406,
+# F407: an undefined "__future__" feature name was imported
+    F407,
+# F501: Invalid % format literal
+    F501,
+# F502: % format expected mapping but got sequence
+    F502,
+# F503: % format expected sequence but got mapping
+    F503,
+# F504: % format unused named arguments
+    F504,
+# F505: % format missing named arguments
+    F505,
+# F506: % format mixed positional and named arguments
+    F506,
+# F507: % format mismatch of placeholder and argument count
+    F507,
+# F508: % format with * specifier requires a sequence
+    F508,
+# F509: % format with unsupported format character
+    F509,
+# F521: .format(...) invalid format string
+    F521,
+# F522: .format(...) unused named arguments
+    F522,
+# F523: .format(...) unused positional arguments
+    F523,
+# F524: .format(...) missing argument
+    F524,
+# F525: .format(...) mixing automatic and manual numbering
+    F525,
+# F541: f-string without any placeholders
+    F541,
+# F601: dictionary key "name" repeated with different values
+    F601,
+# F602: dictionary key variable "name" repeated with different values
+    F602,
+# F621: too many expressions in an assignment with star-unpacking
+    F621,
+# F622: two or more starred expressions in an assignment "(a, *b, *c = d)"
+    F622,
+# F631: assertion test is a tuple, which is always "True"
+    F631,
+# F632: use "==/!=" to compare "str", "bytes", and "int" literals
+    F632,
+# F633: use of ">>" is invalid with "print" function
+    F633,
+# F634: if test is a tuple, which is always "True"
+    F634,
+# F701: a "break" statement outside of a "while" or "for" loop
+    F701,
+# F702: a "continue" statement outside of a "while" or "for" loop
+    F702,
+# F703: a "continue" statement in a "finally" block in a loop
+    F703,
+# F704: a "yield" or "yield from" statement outside of a function
+    F704,
+# F705: a "return" statement with arguments inside a generator
+    F705,
+# F706: a "return" statement outside of a function/method
+    F706,
+# F707: an "except:" block as not the last exception handler
+    F707,
+# F721: syntax error in doctest
+    F721,
+# F722: syntax error in forward annotation
+    F722,
+# F723: syntax error in type comment
+    F723,
+# F811: redefinition of unused "name" from line "N"
+    F811,
+# F821: undefined name "name"
+    F821,
+# F822: undefined name "name" in "__all__"
+    F822,
+# F823: local variable "name" ... referenced before assignment
+    F823,
+# F831: duplicate argument "name" in function definition
+    F831,
+# F841: local variable "name" is assigned to but never used
+    F841,
+# F901: "raise NotImplemented" should be "raise NotImplementedError"
+    F901,
