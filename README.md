@@ -15,7 +15,7 @@ pip install unload_packages
 
 ### Manual installation
 
-Download the latest version from the [releases page](https://github.com/gabrieljreed/MayaPackageReloader/releases) and extract the `unload_packages` folder to your Maya scripts directory. (e.g. `C:\Users\username\Documents\maya\scripts`)
+Download the latest version from the [releases page](https://github.com/gabrieljreed/PythonPackageReloader/releases) and extract the `unload_packages` folder to your Maya scripts directory. (e.g. `C:\Users\username\Documents\maya\scripts`)
 
 ## Usage
 
