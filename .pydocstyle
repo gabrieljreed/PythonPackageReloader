@@ -1,0 +1,11 @@
+[pydocstyle]
+
+# D203 conflicts with D211 https://github.com/PyCQA/pydocstyle/issues/141
+
+# D413 is incompatible with Google-style docstrings and was added to the
+
+#   default ignores in pydocstyle 5 (a py3-only release)
+
+add-ignore = D107,D203,D413
+
+add-select = D404

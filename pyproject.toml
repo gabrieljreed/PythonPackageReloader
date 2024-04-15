@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unload_packages"
+version = "0.1.0"
+authors = [{name = "Gabe Reed", email = "gabrieljreed@gmail.com"}]
+description = "Simple package reloader for Maya"
+keywords = []
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=2.7.0"
+
+[project.urls]
+"Homepage" = "https://github.com/gabrieljreed/MayaPackageReloader"
+"Bug Tracker" = "https://github.com/gabrieljreed/MayaPackageReloader/issues"
