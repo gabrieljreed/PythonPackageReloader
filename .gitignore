@@ -7,3 +7,4 @@
 *.log
 *.pytest_cache/*
 *coverage_html_report/*
+*dist/*
