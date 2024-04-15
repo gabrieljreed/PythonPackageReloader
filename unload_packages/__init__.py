@@ -22,14 +22,10 @@ def unload(packages=None, verbose=False):
                 reload_list.append(module)
 
     for module in reload_list:
-        try:
-            if sys.modules[module] is not None:
-                del sys.modules[module]
-                if verbose:
-                    print(f"Unloaded: {module}")
-        except Exception as e:
+        if sys.modules[module] is not None:
+            del sys.modules[module]
             if verbose:
-                print(f"Error unloading {module}: {e}")
+                print(f"Unloaded: {module}")
 
 
 if __name__ == "__main__":
